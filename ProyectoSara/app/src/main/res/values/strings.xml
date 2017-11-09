@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProyectoSara</string>
+    <string name="cedula">Cedula</string>
+    <string name="cerrar_sesion">Cerrar sesión</string>
+</resources>

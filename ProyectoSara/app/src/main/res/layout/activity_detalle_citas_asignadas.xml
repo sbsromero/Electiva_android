@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        tools:context="com.sbsromero.proyectosara.activities.monitor.DetalleCitasAsignadas">
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="21/10/2017 09:30pm"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textViewFechaCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFecha"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Fecha y hora"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewEstudiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewFechaCita"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Nombre"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/textViewEstudianteCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEstudiante"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Estudiante"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewDocumento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEstudianteCita"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1112482695"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textViewDocumentoCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDocumento"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Documento"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewSemestre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewDocumentoCita"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textViewSemestreCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSemestre"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Semestre"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewLineaAsesoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewSemestreCita"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Programación"
+            android:textSize="22dp" />
+
+
+        <TextView
+            android:id="@+id/textViewLineaAsesoriaCita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewLineaAsesoria"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Asesoria"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textViewObservaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Observaciones"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="18dp"
+            android:layout_below="@+id/textViewLineaAsesoriaCita"/>
+
+        <EditText
+            android:id="@+id/editTextObservaciones"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/textViewObservaciones" />
+
+        <Button
+            android:id="@+id/btnCancelarCita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextObservaciones"
+            android:layout_alignParentStart="true"
+            android:text="Cancelar cita" />
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
